@@ -14,3 +14,14 @@ console.log('this is my profile -->', myProfile)
 console.log(`My first name is ${myProfile.firstName}, and my last name is ${myProfile.lastName}`)
 console.log(myProfile['hobbies'])
 console.log(myProfile['hobbies'][2])
+
+// when we initialize our objects, the keys are turned into strings so we can use numbers, booleans, or null (as examples) as key names
+
+for (let key in myProfile) { // as we can see the keys are strings
+    console.log(typeof key)
+}
+
+let myName = 'firstName';
+
+console.log(myProfile[myName]) // will work
+console.log(myProfile.myName) // will not work: the object will try to find a key named exactly 'myName'
