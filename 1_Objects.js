@@ -36,3 +36,6 @@ myProfile['favouriteFood'] = 'rice and chicken'
 myProfile.height = '6ft'
 
 console.log('my profile updated --->', myProfile)
+
+
+// it is really common to mix and match arrays and objects, very practical
