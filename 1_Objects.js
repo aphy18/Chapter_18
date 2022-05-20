@@ -25,3 +25,14 @@ let myName = 'firstName';
 
 console.log(myProfile[myName]) // will work
 console.log(myProfile.myName) // will not work: the object will try to find a key named exactly 'myName'
+
+
+////// Updating and adding properties //////
+
+
+myProfile['firstName'] = 'Lesley';
+myProfile.lastName = 'Adams'
+myProfile['favouriteFood'] = 'rice and chicken'
+myProfile.height = '6ft'
+
+console.log('my profile updated --->', myProfile)
